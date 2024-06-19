@@ -1,0 +1,105 @@
+.table_head {
+  padding: 5px 0px 5px 0;
+}
+
+.table_row_user,
+.table_row_email,
+.table_row_role {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  margin-left: 0px;
+  color: #000000;
+}
+
+.table_row_role {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  padding: 3px 5px;
+  background-color: #007bff;
+  border-radius: 15px;
+  width: 150px;
+  margin: 10px auto;
+}
+.group_file_td {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  width: 25%;
+}
+
+.user_image_icons {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ced4da;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  background-color: #001f40f3;
+  /* background-color: var(--user-color); */
+}
+
+.group_date_td {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.group_size_td {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.group_owner_td {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  width: 25%;
+}
+@media screen and (max-width: 1000px) {
+  .group_date_td {
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 500px) {
+  .group_table tr {
+    padding: 5px 0px 5px 0px;
+  }
+  .group_file_td {
+    font-size: 0.7rem;
+  }
+
+  .group_date_td {
+    font-size: 0.7rem;
+    overflow: hidden;
+  }
+
+  .group_size_td {
+    font-size: 0.7rem;
+  }
+
+  .group_owner_td {
+    font-size: 0.7rem;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 80px;
+  }
+  .user_action_input {
+    padding-right: 20px;
+  }
+}

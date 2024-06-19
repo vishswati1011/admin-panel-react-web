@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Nunito+Sans:wght@300&family=Trirong:wght@400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.modal-content {
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px !important;
+}
+
+.navbar_div {
+  background: white;
+  grid-area: navbar;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.side_bar_div {
+  padding-right: 5px;
+  background: white;
+  grid-area: sidebar;
+  position: fixed;
+  margin-top: 50px;
+  height: 100%;
+  border-right: 1px solid #adb5bd;
+}
+
+.route_section_div {
+  grid-area: routes;
+  margin-top: 51px;
+  margin-left: 220px;
+}
+
+.drive_main_section {
+  display: grid;
+  grid-template-areas:
+    "navbar navbar navbar navbar navbar navbar"
+    "sidebar routes routes routes routes routes";
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto 1fr;
+}
+
+@media only screen and (max-width: 1000px) {
+  .route_section_div {
+    margin-left: 0;
+    margin-top: 35px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root {
+    height: 35px !important;
+  }
+}

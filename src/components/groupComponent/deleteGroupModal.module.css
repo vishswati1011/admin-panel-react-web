@@ -1,0 +1,38 @@
+.delete-group-modal-text {
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  width: 350px;
+}
+.delete-group-modal-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid #f4f4f4;
+}
+.delete-group-modal-button {
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+.delete-group-modal-button:hover {
+  background-color: #cfcdcd;
+}
+.delete-group-modal-button-right {
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  color: red;
+  padding: 5px 10px;
+  background-color: #cecdcd;
+  border-radius: 5px;
+}
+.delete-group-modal-button-right:hover {
+  background-color: crimson;
+  color: white;
+}

@@ -1,0 +1,123 @@
+.edit_group_title {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: 10px;
+  font-size: 20px;
+  padding-left: 26px;
+  font-weight: bolder;
+  font-style: normal;
+}
+
+.edit_group_body {
+  display: flex;
+  padding: 0 20px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.edit_group_input {
+  width: 420px;
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 10px;
+  border: none;
+  margin-right: auto; /* Add margin-right to push the input to the left */
+  border: 1px solid lightgray;
+}
+.edit_save_button {
+  font-size: 1rem;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+.editgroup_table {
+  width: 100%;
+}
+
+.editgroup_table tr {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ced4da;
+}
+
+.editgroup_table_details {
+  border-top: 1px solid #ced4da;
+}
+
+.editgroup_file_td {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  width: 25%;
+}
+.editgroup_input_td {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.editgroup_date_td {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.editgroup_size_td {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.editgroup_owner_td {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  width: 25%;
+}
+.edit_section_message {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 50dvh;
+}
+.add_and_back_button_div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.back_button {
+  text-decoration: none;
+  font-weight: 600;
+}
+.back_button {
+  text-decoration: underline;
+}
+@media screen and (max-width: 500px) {
+  .edit_group_title {
+    padding-left: 10px;
+    margin-top: 20px;
+  }
+  .edit_group_input {
+    width: 100%;
+  }
+  .edit_group_body {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 50px;
+  }
+  .editgroup_table tr {
+    gap: 10px;
+    padding: 10px 0px;
+  }
+}

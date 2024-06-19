@@ -1,0 +1,406 @@
+.delete_employee_modal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.confirmation_message {
+  font-weight: 600;
+  width: 350px;
+}
+
+.cancel_button {
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  border: none;
+}
+.cancel_button:hover {
+  background-color: #cfcdcd;
+}
+.delete_button {
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  color: red;
+  border: none;
+  padding: 5px 10px;
+  background-color: #cecdcd;
+  border-radius: 5px;
+}
+.delete_button:hover {
+  background-color: crimson;
+  color: white;
+}
+.employee_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5px 10px 5px;
+  border-bottom: 0.5px solid #e3e3e3;
+}
+.employee_row_table {
+  width: 100%;
+}
+.employee_row_user_name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 80px;
+  cursor: pointer;
+}
+.employee_card_user_name,
+.employee_row_user_name {
+  margin-bottom: 0;
+  font-style: normal;
+  font-size: 1rem;
+  color: #000;
+  width: 150px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.user_name_image_div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.employee_card_user_role,
+.employee_row_user_role {
+  display: flex;
+  margin-bottom: 0;
+  padding: 5px 15px;
+  background: #007bff;
+  border-radius: 24px;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.employee_row_email {
+  font-style: normal;
+  font-size: 16px;
+  color: #000;
+  width: 250px;
+  margin-bottom: 0;
+  display: flex;
+}
+.employee_card_date {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.employee_row_date {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Employee page css */
+
+.employees_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 84%;
+  border-bottom: 1px solid #ced4da;
+  position: fixed;
+  background: white;
+  top: 50px;
+  padding-top: 10px;
+  margin-left: 20px;
+}
+.table_div {
+  margin-bottom: 10px;
+}
+.employees_header_left {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  color: #000000;
+  margin-left: 10px;
+}
+.employees_header_right {
+  display: flex;
+  align-items: center;
+}
+.employees_add_employee {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 5px 15px;
+  background-color: #007bff;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.employees_body {
+  margin-top: 60px;
+  margin-left: 15px;
+}
+
+.employees_table_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #e3e3e3;
+  background-color: white;
+}
+
+.employees_table_header p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.employees_table_header_user {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 100px;
+  text-align: center;
+}
+
+.employees_table_header_email {
+  margin: 10px 0px 10px 0px;
+  width: 250px;
+  text-align: center;
+}
+
+.employees_table_header_role {
+  margin: 10px 0px 10px 0px;
+  width: 150px;
+  text-align: center;
+}
+
+.employees_table_header_joining {
+  margin-bottom: 0;
+  width: 150px;
+  text-align: center;
+}
+
+.employee_no_user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+.user_card_image_icons,
+.user_image_icons {
+  width: 35px;
+  height: 35px;
+  margin: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ced4da;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  background-color: var(--user-color);
+}
+
+.user_name_with_icon {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.layout_icons {
+  border-radius: 50%;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  transition: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.layout_icons:hover {
+  background: #e3e3e3;
+}
+
+.tooltip_text {
+  visibility: hidden;
+  width: fit-content;
+  padding: 2px 5px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 25%;
+  left: 30%;
+  margin-left: -60px;
+}
+
+.tooltip_text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
+
+.layout_icons:hover .tooltip_text {
+  visibility: visible;
+}
+.employee_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #e3e3e3;
+  width: 390px;
+  border-radius: 5px;
+  padding: 15px;
+}
+.employee_email {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+.employee_email p {
+  margin-bottom: 0;
+}
+.employee_joining {
+  display: flex;
+  justify-content: space-between;
+}
+.employee_name_role {
+  justify-content: space-between;
+  display: flex;
+}
+
+.employee_card_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.dot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_icon {
+  cursor: pointer;
+}
+
+.menu_icon:hover {
+  background-color: #f6f6f6;
+  border-radius: 50%;
+  transition: all ease-in-out 0.2s;
+}
+@media screen and (max-width: 1000px) {
+  .employees_header {
+    width: 100%;
+    top: 45px;
+    margin-left: 0;
+  }
+  .employees_body {
+    margin-left: 0;
+    margin-top: 70px;
+  }
+  .table_div {
+    margin-bottom: 50px;
+  }
+  .employees_header_right {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .employees_header {
+    width: 100%;
+    margin-left: 0;
+  }
+  .employees_add_employee {
+    padding: 3px 5px;
+    font-size: 0.85rem;
+  }
+  .employees_table_header p {
+    font-size: 0.75rem;
+  }
+  .employee_card_container {
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+
+  .employee_row {
+    font-size: 0.6rem;
+  }
+  .employees_table_header_user {
+    margin-left: 0;
+  }
+  .employees_table_header_user,
+  .employees_table_header_email,
+  .employees_table_header_role,
+  .employees_table_header_joining {
+    width: 100%;
+  }
+  .user_name_with_icon {
+    width: 100%;
+    font-size: 0.6rem;
+  }
+  .user_image_icons {
+    width: 25px;
+    height: 25px;
+  }
+
+  .employee_row_user_name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 80px;
+  }
+
+  .user_name_with_icon p {
+    font-size: 0.6rem;
+  }
+  .employee_card_email {
+    overflow: hidden;
+    margin-right: 8px;
+  }
+  .employee_row_email {
+    width: 100%;
+    font-size: 0.6rem;
+    overflow: hidden;
+    margin-right: 8px;
+  }
+  .employee_row_user_role {
+    width: 100%;
+    font-size: 0.6rem;
+    padding: 3px 0;
+  }
+  .employee_row_date {
+    width: 100%;
+    font-size: 0.6rem;
+  }
+  .menu_icon {
+    font-size: 1rem !important;
+  }
+}
+@media screen and (max-width: 395px) {
+  .employee_card {
+    width: 360px;
+  }
+}

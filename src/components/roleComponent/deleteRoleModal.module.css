@@ -1,0 +1,40 @@
+.delete-role-modal-text {
+  font-style: normal;
+  text-align: center;
+  font-weight: bold;
+  width: 350px;
+}
+
+.delete-role-modal-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid #f4f4f4;
+}
+
+.delete-role-modal-button {
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+.delete-role-modal-button:hover {
+  background-color: #cfcdcd;
+}
+.delete-role-modal-button-right {
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  color: red;
+  padding: 5px 10px;
+  background-color: #cecdcd;
+  border-radius: 5px;
+}
+.delete-role-modal-button-right:hover {
+  background-color: crimson;
+  color: white;
+}

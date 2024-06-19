@@ -1,0 +1,226 @@
+.profile_edit_page {
+  margin: 1rem;
+}
+.profile_edit_icons {
+  display: flex;
+}
+.modal_headers {
+  width: 100%;
+}
+.form_head_section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.profile_icon {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #ced4da;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  background-color: ghostwhite;
+}
+
+.edit_icon {
+  display: flex;
+  align-items: flex-end;
+  color: #007bff;
+  margin-bottom: 30px;
+  cursor: pointer;
+  border: 1px solid #ced4da;
+  background-color: #f8f9fa;
+  height: 100%;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.edit_icon:hover {
+  color: #0052ab;
+  transition: all ease-in-out 0.4s;
+}
+
+.name_heading {
+  font-size: 2rem;
+  margin-left: 2rem;
+  font-weight: bold;
+}
+
+.email_heading {
+  font-size: 1rem;
+  margin-left: 2rem;
+  font-weight: bold;
+}
+
+.roles_heading {
+  font-size: 1rem;
+  margin-left: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.perent_div_of_image {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.image_preview_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-right: 70px;
+}
+.image_view {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #ced4da;
+  object-fit: cover;
+}
+.image_preview {
+  width: 100px;
+  height: 100px;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  object-fit: cover;
+}
+.upload_image_div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.upload_picture_text {
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #007bff;
+  cursor: pointer;
+}
+.remove {
+  cursor: pointer;
+}
+.remove:hover {
+  color: #007bff;
+}
+.profile_circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  margin-top: 2px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profile_details {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit_headding {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+
+.form_group label {
+  font-weight: bold;
+}
+
+.form input {
+  width: 300px;
+  padding: 0px;
+}
+
+.placeholder_style {
+  width: 150%;
+}
+
+.form button {
+  width: 150px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Error message style */
+.form input:invalid {
+  border: 1px solid red;
+}
+
+.form input:invalid + span {
+  display: block;
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.edit_area_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.edit_name_input {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #d6d6d6;
+  width: 300px;
+  border-radius: 7px;
+}
+
+.edit_profile_icon {
+  min-width: 8rem;
+  min-height: 8rem;
+  cursor: pointer;
+  margin-left: 5rem;
+}
+
+.save_button {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  background-color: #007bff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  height: 35px;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  outline-width: 0;
+}
+.div_of_user_details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .profile_edit_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}

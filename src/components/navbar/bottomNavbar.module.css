@@ -1,0 +1,115 @@
+/* Add bottom navigation bar style */
+.link_css {
+  text-decoration: none;
+  color: #000;
+}
+
+.link_css:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.bottom_navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  z-index: 1;
+}
+
+.bottom_navbar_div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Add bottom navigation bar style */
+.bottom_navbar {
+  display: none;
+}
+
+/* Add icons style */
+.link_color {
+  text-decoration: none;
+}
+
+.popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 20px 0px;
+  margin-bottom: 37px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 0;
+}
+
+.icon_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-name {
+  font-size: 0.85rem;
+  margin-bottom: 0;
+}
+
+.icon_size {
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  border: 1px solid #dee2e6;
+}
+.bottom_icon_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  width: 80px;
+  padding-top: 5px;
+}
+.bottom_icon_item:hover {
+  border-radius: 5px;
+  background: rgba(0, 123, 255, 0.25);
+}
+.icon_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 5px;
+  width: 84px;
+  padding: 5px 0px;
+}
+.icon_item:hover {
+  border-radius: 8px;
+  background: rgba(0, 123, 255, 0.25);
+}
+
+.icon_item p {
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  margin-bottom: 0;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .bottom_navbar {
+    display: block;
+  }
+}

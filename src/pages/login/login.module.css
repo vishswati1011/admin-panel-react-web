@@ -1,0 +1,84 @@
+.login_page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44.8rem;
+}
+
+.login_page_left {
+  flex: 0.35;
+  background-color: white;
+}
+
+.login_page_main {
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  height: 30rem;
+ 
+}
+
+.login_page_header {
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: #3e3e3e;
+}
+
+
+
+.login_page_input_form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_page_input {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #d6d6d6;
+  width: 300px;
+  border-radius: 7px;
+}
+
+.login_page_password_visibility {
+  background: transparent;
+  position: absolute;
+  margin-top: 30px;
+  border: none;
+  margin-left: -34px;
+}
+
+.login_button {
+  margin-top: 30px;
+  background-color: #3e3e3e;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 300px;
+  height: 35px;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  outline-width: 0;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .login_page_right {
+    display: none;
+  }
+
+  .login_page {
+    background-color: white;
+  }
+
+}

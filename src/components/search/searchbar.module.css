@@ -1,0 +1,22 @@
+.image_icons {
+  width: 23px;
+  height: 23px;
+  margin: auto;
+}
+ 
+@media (max-width: 768px) {
+    .search_bar input {
+        height: 1px;
+        width: 100%;
+        background-color: #e9ecef;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+    .search_bar input {
+        height: 5px;
+        width: 400px;
+        background-color: #e9ecef;
+    }
+}

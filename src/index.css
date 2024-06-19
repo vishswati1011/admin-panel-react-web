@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Nunito+Sans:wght@300&family=Trirong:wght@300;400&display=swap');
+
+*{
+  font-family: "Nunito Sans", sans-serif;
+}
+ 
+
+ html{
+  scroll-behavior: smooth;
+}
+/* scroll bar css */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 100px;
+  padding: 100px 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7179d8;
+  cursor: pointer;
+}

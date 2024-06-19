@@ -1,0 +1,175 @@
+.modal_head {
+  width: 100%;
+}
+
+.form_role {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.add_role_input {
+  max-width: 400px;
+  background-color: white;
+  border-radius: 2px;
+  padding: 10px;
+  width: 400px;
+}
+.main_div_of_data {
+  margin-top: 50px;
+}
+.main_div_of_loader {
+  margin-top: 70px;
+}
+.role_save_button {
+  font-size: 1rem;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+
+.role_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #adb5bd;
+  width: 170px;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 8px 5px 8px 10px;
+  cursor: pointer;
+}
+
+.role_text {
+  margin-bottom: 0;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+}
+
+.roles {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow: auto;
+}
+.roles_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-bottom: 1px solid #ced4da;
+  position: fixed;
+  width: 84%;
+  background: #fff;
+}
+
+.roles_header_text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  color: #000;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.roles_add_role {
+  margin-right: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 5px 15px;
+  background-color: #007bff;
+  border-radius: 3px;
+}
+
+.roles_body {
+  margin: 70px 10px 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.button_container {
+  display: flex;
+  justify-content: flex-end !important;
+  gap: 20px;
+}
+
+.save_button {
+  font-size: 1rem;
+  padding: 8px 18px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+}
+.edit_modal_button_div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.cancel_button {
+  font-size: 1rem;
+  padding: 8px 15px;
+  background-color: #eaecee;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .roles {
+    padding-left: 10px;
+  }
+  .roles_header {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .roles_add_role {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .role_card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #adb5bd;
+    width: 180px;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 456px) {
+  .add_role_input {
+    width: 350px;
+  }
+  .role_card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #adb5bd;
+    width: 160px;
+    margin: 5px auto;
+  }
+  .roles {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .roles_header {
+    width: 100%;
+  }
+  .roles_body {
+    margin-bottom: 50px;
+  }
+}
